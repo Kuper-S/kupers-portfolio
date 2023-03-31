@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
-import styled from 'styled-components';
 import RetroButtons from '../../components/RetroButtons';
-import Animations from '../../components/Animation/Animations';
+import Animations  from '../../components/Animation/Animations';
+import styled, { keyframes } from 'styled-components';
+import Mario from '../../assets/annimation/super-mario-mario.gif';
+
 const HomeContainer = styled.div`
   background-color: #1c1c1c;
   color: #fff;
@@ -33,6 +35,32 @@ const Line = styled.div`
   margin: 20px 0;
 `;
 
+
+const move = keyframes`
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(-10px, -10px);
+  }
+`;
+
+const GitImage = styled.img`
+  position: sticky;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  animation: ${move} 1s ease-in-out infinite alternate;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+`;
+
+
 const Home = () => {
   const [isAnimating, setIsAnimating] = React.useState(false);
   
@@ -45,6 +73,7 @@ const Home = () => {
     <HomeContainer>
      {isAnimating && <Animations />}
       <HeroText>Welcome to My Retro Portfolio</HeroText>
+      <GitImage src={Mario} alt="git image" />
       <LinesContainer>
         <Line />
         <p>Welcome to my retro-themed portfolio!</p>

@@ -8,8 +8,9 @@ const AnimationContainer = styled.div`
   position: fixed;
   bottom: 20px;
   right: 50px;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
+  background-position: center;
   background-image: url(${props => props.backgroundImage});
   background-size: cover;
   z-index: 100;
