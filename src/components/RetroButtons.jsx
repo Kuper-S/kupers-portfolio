@@ -37,7 +37,7 @@ const RetroButtons = () => {
 
   const handleFightClick = () => {
     setIsAnimating(true);
-    setTimeout(() => setIsAnimating(false), 3000);
+    setTimeout(() => setIsAnimating(false), 2000);
   };
 
   return (
