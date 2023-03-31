@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
-
+import RetroButtons from '../../components/RetroButtons';
+import Animations from '../../components/Animation/Animations';
 const HomeContainer = styled.div`
   background-color: #1c1c1c;
   color: #fff;
@@ -19,12 +20,6 @@ const HeroText = styled.h1`
   text-align: center;
 `;
 
-const Subtitle = styled.p`
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.5rem;
-  text-align: center;
-`;
-
 
 const LinesContainer = styled.div`
   font-family: 'VT323', monospace;
@@ -39,15 +34,23 @@ const Line = styled.div`
 `;
 
 const Home = () => {
+  const [isAnimating, setIsAnimating] = React.useState(false);
+  
+  const handleFightClick = () => {
+    setIsAnimating(true);
+    setTimeout(() => setIsAnimating(false), 3000); // Close the animation after 3 seconds
+  };
+  
   return (
     <HomeContainer>
+     {isAnimating && <Animations />}
       <HeroText>Welcome to My Retro Portfolio</HeroText>
       <LinesContainer>
         <Line />
         <p>Welcome to my retro-themed portfolio!</p>
         <Line />
       </LinesContainer>
-        
+      <RetroButtons handleFightClick={handleFightClick}/>
     </HomeContainer>
   );
 };
