@@ -14,8 +14,11 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'PressStart2P', cursive;
     margin: 0;
     padding: 0;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20"><path fill="%23ccc" d="M0 0h10v10H0z"></path><path fill="%23fff" d="M10 10h10v10H10z"></path><path fill="%23ccc" d="M10 10h10v10H10z"></path><path fill="%23fff" d="M0 10h10v10H0z"></path></svg>');
-    background-size: cover;
+    background: #1d1f21;
+  ${'' /* border: 30px solid #c0c0c0;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: inset 0px 0px 30px rgba(255, 255, 255, 0.2); */}
   }
 `;
 
