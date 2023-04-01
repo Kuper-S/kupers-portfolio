@@ -5,7 +5,7 @@ import { slide as Menu } from 'react-burger-menu';
 
 const HeaderContainer = styled.header`
   background-color: #262626;
-  
+  cursor: pointer;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -92,19 +92,19 @@ const Header = () => {
     <HeaderContainer>
       <Logo>Super Kuper's</Logo>
       <NavLinks>
-        <NavLink href="#">Home</NavLink>
-        <NavLink href="#">Projects</NavLink>
-        <NavLink href="#">About</NavLink>
-        <NavLink href="#">Contact</NavLink>
-        <IconLink href="#"><FaGithub /></IconLink>
-        <IconLink href="#"><FaLinkedin /></IconLink>
+        <NavLink href="/">Home</NavLink>
+        <NavLink href="/projects">Projects</NavLink>
+        <NavLink href="/about">About</NavLink>
+        <NavLink href="/contact">Contact</NavLink>
+        <IconLink href="https://github.com/Kuper-S"><FaGithub /></IconLink>
+        <IconLink href="https://www.linkedin.com/in/avihai-kuper-801a63217/"><FaLinkedin /></IconLink>
       </NavLinks>
       <MenuIcon>
         <Menu right>
-          <NavLink href="#">Home</NavLink>
-          <NavLink href="#">Projects</NavLink>
-          <NavLink href="#">About</NavLink>
-          <NavLink href="#">Contact</NavLink>
+          <NavLink href="/">Home</NavLink>
+          <NavLink href="/projects">Projects</NavLink>
+          <NavLink href="/about">About</NavLink>
+          <NavLink href="/contact">Contact</NavLink>
         </Menu>
         <span></span>
         <span></span>

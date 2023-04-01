@@ -4,10 +4,14 @@ import styled from 'styled-components';
 const FooterContainer = styled.footer`
   background-color: #1c1c1c;
   color: #fff;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 `;
 
 const FooterText = styled.p`

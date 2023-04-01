@@ -4,7 +4,7 @@ import Animations from './Animation/Animations';
 
 const ButtonContainer = styled.div`
   position: fixed;
-  bottom: 0;
+  bottom: 40px;
   right: 0;
   display: flex;
   flex-direction: column;
@@ -19,12 +19,13 @@ const Button = styled.button`
   font-family: 'PressStart2P', cursive;
   font-size: 14px;
   text-transform: uppercase;
-  padding: 10px 20px;
+  padding: 12px 20px;
   margin: 10px 0;
   border: none;
+  bottom: 10px;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: 2px 2px #000;
+  box-shadow: 3px 3px #000;
   transition: background-color 0.2s;
 
   &:hover {

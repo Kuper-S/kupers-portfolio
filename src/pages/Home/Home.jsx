@@ -9,10 +9,11 @@ const HomeContainer = styled.div`
   background-color: #1c1c1c;
   color: #fff;
   display: flex;
+  margin-top: 50px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 90vh;
   position: relative;
   z-index: 0;
 `;

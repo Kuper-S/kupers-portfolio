@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ProjectCard from './ProjectCard';
+import ProjectCard from '../../components/ProjectCard';
 
 const ProjectsContainer = styled.div`
   display: flex;
@@ -35,6 +35,7 @@ const Project = () => {
           <ProjectCard key={index} title={project.title} description={project.description} image={project.image} />
         ))}
       </ProjectsContainer>
+      <button>HOME</button>
     </>
   );
 };

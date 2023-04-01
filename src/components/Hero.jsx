@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import Skills from './Skills';
 const SectionContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -54,8 +54,9 @@ const Hero = () => {
         
         <Skill>TS</Skill>
         <Skill>Embedded c++</Skill>
+        <Skills/>
       </SkillContainer>
-     
+    
     </SectionContainer>
   );
 };
