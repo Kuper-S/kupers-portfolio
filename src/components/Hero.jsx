@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Skills from './Skills';
+
+
 const SectionContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -39,7 +41,7 @@ const Hero = () => {
   return (
     <SectionContainer>
         <ShortDescription>
-        My name is Avihai Kuperberg, I'm 31 years old and I'm a full stack web developer and Python developer. I have a passion for writing code and have completed several coding bootcamps and online courses to hone my skills. I'm excited to continue learning and growing in the field of Programing.
+        My name is Avihai Kuperberg, I'm a full stack web developer and Python developer. I have a passion for writing code and have completed several coding bootcamps and online courses to hone my skills. I'm excited to continue learning and growing in the field of Programing.
         I am a 90s kid at heart and a passionate fan of iconic games and TV shows like Dragon Ball, Pokemon, and Mario.
       </ShortDescription>
       <SectionHeader>Skills</SectionHeader>

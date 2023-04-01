@@ -35,7 +35,7 @@ const SkillCard = styled.div`
   box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
   position: relative;
   overflow: hidden;
-
+  border-radius: 10px;
   &:hover .skill-icon {
     transform: rotate(360deg);
   }

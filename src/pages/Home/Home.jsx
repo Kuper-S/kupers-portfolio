@@ -37,7 +37,7 @@ const Line = styled.div`
 
 const GitImage = styled.img`
   position: sticky;
-  bottom: 20px;
+  ${'' /* bottom: 20px; */}
   right: 20px;
   width: 50px;
   height: 50px;
@@ -45,7 +45,7 @@ const GitImage = styled.img`
   cursor: pointer;
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.8);
   }
 `;
 

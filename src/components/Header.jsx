@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { slide as Menu } from 'react-burger-menu';
+import GameBoy from '../assets/images/retro-game.png'
+
 
 const HeaderContainer = styled.header`
   background-color: #262626;
@@ -87,10 +89,26 @@ const MenuIcon = styled.div`
   }
 `;
 
+const HeaderLogoContainer = styled.div`
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  space-around: 10px;
+`;
+
+const GameBoyImage = styled.img`
+  width: 5.3%;
+  height: 5%;
+  margin-left: 10px;
+`;
+
 const Header = () => {
   return (
     <HeaderContainer>
-      <Logo>Super Kuper's</Logo>
+      <HeaderLogoContainer>
+        <Logo>Super Kuper's</Logo>
+        <GameBoyImage src={GameBoy} alt="GameBoy" />
+      </HeaderLogoContainer>
       <NavLinks>
         <NavLink href="/">Home</NavLink>
         <NavLink href="/projects">Projects</NavLink>
